@@ -15,13 +15,13 @@
 9)Go to http://localhost:8000/ to begin testing!<br/>
 <br/><br/>
 
-As for the report challenge they were added to the project, but to have them easter to see in the READ ME:
+As for the report challenge they were added to the project, but to have them easter to see in the READ ME:<br/>
 1)"SELECT associations.name as association_name, companies.name as company_name, domains.domain as domain FROM sites 
             join associations on sites.association = associations.id 
             join domains on domains.site = sites.id 
             join companies on sites.company = companies.id 
-            WHERE associations.name = 'Basement Systems, Inc.' AND sites.is_supercharged = 1 AND domains.is_primary = 1 AND domains.is_deleted = 0 AND sites.is_deleted = 0"<br/>
+            WHERE associations.name = 'Basement Systems, Inc.' AND sites.is_supercharged = 1 AND domains.is_primary = 1 AND domains.is_deleted = 0 AND sites.is_deleted = 0"<br/><br/>
 2)"SELECT associations.name as association_name, companies.name as company_name, sites.name as site_name from sites 
             join associations on sites.association = associations.id join companies on sites.company = companies.id 
-            where sites.is_deleted = 0 AND sites.id not in (Select domains.site from domains)"<br/>
-3)"SELECT sites.id as site_id, sites.name as site_name from sites join domains on domains.site = sites.id where sites.is_deleted = 0 and domains.is_deleted = 1 GROUP BY sites.id"<br/>
+            where sites.is_deleted = 0 AND sites.id not in (Select domains.site from domains)"<br/><br/>
+3)"SELECT sites.id as site_id, sites.name as site_name from sites join domains on domains.site = sites.id where sites.is_deleted = 0 and domains.is_deleted = 1 GROUP BY sites.id"<br/><br/>
