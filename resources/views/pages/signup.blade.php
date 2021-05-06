@@ -31,7 +31,7 @@
                                 <input required type="email" class="form-control" id="emailInput" name="email" value="{{old('email')}}">
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                <input class="form-check-input" type="checkbox" name="validation" value="true" id="flexCheckDefault" checked>
                                 <label for="emailInput" style="font-weight: bold;">Enable Validation</label>
                             </div>
                             <br>

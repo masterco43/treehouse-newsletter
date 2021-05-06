@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'NewsLetterController@index')->name('home');
-Route::post('/signup', 'NewsLetterController@index')->name('signup');
+Route::post('/signup', 'NewsLetterController@signup')->name('signup');
