@@ -17,7 +17,7 @@
                     <a class="dropdown-item" href="#">Requirements</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="/">Sign up form</a>
-                    <a class="dropdown-item" href="#">Sign up table</a>
+                    <a class="dropdown-item" href="/table">Sign up table</a>
                 </div>
             </li>
             <li class="nav-item dropdown active">

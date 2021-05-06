@@ -1,6 +1,6 @@
 @extends('layouts.basicLayout')
 @section('content')
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/feedback.css') }}" >
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/treehouse.css') }}" >
     <div class="container">
         <div class="row text-center">
             <div class="col-md-12">
