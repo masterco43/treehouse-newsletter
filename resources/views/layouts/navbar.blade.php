@@ -14,7 +14,7 @@
                     Newsletter Challenge
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Requirements</a>
+                    <a class="dropdown-item" href="/requirments/newsletter">Requirements</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="/">Sign up form</a>
                     <a class="dropdown-item" href="/table">Sign up table</a>
@@ -25,7 +25,7 @@
                     Reporting Challenge
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Requirements</a>
+                    <a class="dropdown-item" href="/requirments/reporting">Requirements</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Exercise 1</a>
                     <a class="dropdown-item" href="#">Exercise 2</a>
