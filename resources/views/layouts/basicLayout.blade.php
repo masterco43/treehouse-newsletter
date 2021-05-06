@@ -22,10 +22,7 @@
     </head>
 
     <body style="background-color:#eff2f5; width:100%">
-        <div class="row" style="padding-top: 1.5%; padding-left:3%; width:90%">
-            <a href='https://remoterated.com/'  target="_blank"><img src="https://cdn.treehouseinternetgroup.com/cms_images/872/favicon-1.ico" alt="rr-logo" height="50px" width="50px" style="filter: grayscale(10); "></a>
-        </div>
-        <br>
+        @include('layouts.navbar')
         <div class="container">
             @include('layouts.messages')
             @yield('content')
