@@ -48,7 +48,8 @@
     <script>
         $(document).ready(function() {
             $('#signUpTable').DataTable({
-                "lengthChange": false
+                "lengthChange": false,
+                "order": [[ 0, "desc" ]]
             });
         });
 
