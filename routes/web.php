@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'NewsLetterController@index')->name('home');
 Route::post('/signup', 'NewsLetterController@signup')->name('signup');
-Route::get('/table', 'NewsLetterController@showSignUpsTable')->name('signup');
+Route::get('/table', 'NewsLetterController@showSignUpsTable')->name('table');

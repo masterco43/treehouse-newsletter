@@ -24,15 +24,15 @@
                             @csrf
                             <div class="form-group">
                                 <label for="nameInput" style="font-weight: bold;">Name <span class="required" style="">*</span></label>
-                                <input required type="text" class="form-control" id="nameInput" name="name" value="{{old('name')}}" minlength="2" maxlength="50">
+                                <input required type="text" class="form-control" id="nameInput" name="name" value="{{old('name')}}">
                             </div>
                             <div class="form-group">
                                 <label for="emailInput" style="font-weight: bold;">E-mail Address <span class="required" style="">*</span></label>
                                 <input required type="email" class="form-control" id="emailInput" name="email" value="{{old('email')}}">
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="validation" value="true" id="flexCheckDefault" checked>
-                                <label for="emailInput" style="font-weight: bold;">Enable Validation</label>
+                                <input class="form-check-input" type="checkbox" name="validation" value="true" id="validationCheck" checked>
+                                <label for="emailInput" style="font-weight: bold;">Frontend Validation <span id="validationSpan">Enabled</span></label>
                             </div>
                             <br>
                             <div class="row">

@@ -1,12 +1,3 @@
-function changeCounter(){
-    count = $('#commentInput').val().length;
-    $('#count-input').html(count);
-    if(count > 199)
-        $('#counter').css('color','red');
-    else
-        $('#counter').css('color','#6c757d');
-}
-
 $('#resetbutton').click( function (){
     Swal.fire({
         title: 'Do you want to reset the fields?',
@@ -18,13 +9,14 @@ $('#resetbutton').click( function (){
         }).then((result) => {
 
         if (result.isConfirmed) {
-            fields = ['nameInput', "emailInput", "commentInput"];
-            for(i = 0; i < 3; i++){
+            fields = ['nameInput', "emailInput"];
+            for(i = 0; i < 2; i++){
                 $('#'+fields[i]).val('')
             }
-            changeCounter();
+            $('#validationCheck').prop('checked', true);
 
             Swal.fire('Reset!', '', 'success')
+            editValidation()
         } else if (result.isDenied) {
             Swal.fire('Fields are not reset!', '', 'error')
         }
@@ -34,3 +26,22 @@ $('#resetbutton').click( function (){
 $('#helpIcon').click( function (){
     Swal.fire('Info!', 'A quick way to sign up and get constant information about us!', 'question')
 });
+
+$("#validationCheck").change(function() {
+    editValidation();
+});
+
+function editValidation(){
+    if($('#validationCheck').is(":checked")){
+        $("#validationSpan").html("Enabled");
+        $('.required').show();
+        $('#nameInput').prop('required', true);
+        $('#emailInput').prop('required', true);
+    }
+    else{
+        $("#validationSpan").html("Disabled");
+        $('.required').hide();
+        $('#nameInput').prop('required', false);
+        $('#emailInput').prop('required', false);
+    }
+}
