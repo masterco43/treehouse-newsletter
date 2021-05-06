@@ -13,6 +13,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        \Eloquent::unguard();
+
+        $path = 'storage/seeder/treehouse.sql';
+        \DB::unprepared(file_get_contents($path));
+        $this->command->info('Country table seeded!');
     }
 }

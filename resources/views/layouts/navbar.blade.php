@@ -27,9 +27,9 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="/requirments/reporting">Requirements</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Exercise 1</a>
-                    <a class="dropdown-item" href="#">Exercise 2</a>
-                    <a class="dropdown-item" href="#">Exercise 3</a>
+                    <a class="dropdown-item" href="/report/1">Exercise 1</a>
+                    <a class="dropdown-item" href="/report/2">Exercise 2</a>
+                    <a class="dropdown-item" href="/report/3">Exercise 3</a>
                 </div>
             </li>
         </ul>
